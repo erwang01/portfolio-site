@@ -43,9 +43,14 @@ img {
     margin: 0 auto;
 }
 
+/*This keeps the logo at a nice size all the time except in extreme cases (<200px)
+At that point the text overlaps the logo. How do you make it such that the text
+is displayed below the logo? Bootstrap's sm col looks like a solution but the
+break point is around 500ish pixels not 200. */
 .logo {
-    max-height: 150px;
-    max-width: 150px;
+    height: 100px;
+    width: 100px;
+    min-width:100px;
 }
 
 @media screen and (max-width: 800px)
