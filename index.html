@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     </head>
+
     <body>
         <div class="container">
             <header class="header row">
@@ -21,17 +22,25 @@
                     <h4>Front-End Ninja</h4>
                 </div>
             </header>
-            <hr class="row col-xs-12">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr>
+                </div>
+            </div>
+
             <div class="row">
                 <picture class="col-xs-12">
                     <source sizes="100vw" srcset="images/WhiteTiger_small_400.jpg 400w, images/WhiteTiger_medium_800.jpg 800w">
                     <img class="img-responsive" src="images/WhiteTiger.jpg" alt="White Tiger with Blue Eyes">
                 </picture>
             </div>
+
             <main class="row">
                 <header class="col-xs-12">
                     <h2>Featured Work</h2>
                 </header>
+
                 <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <picture>
                         <source sizes="(min-width: 600px) 50vw, 33vw" srcset="images/Glock-19.jpg 500w, images/Glock-19_small_300.jpg 300w"/>
@@ -43,9 +52,11 @@
                         <a href="https://github.com/erwang01/homeboy" target="_blank">https://github.com/erwang01/homeboy</a>
                     </p>
                 </article>
+
                 <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <!--TODO: Should I still be using picture because there is only one image file?
-                    This helps keep everything the same but it also is an unecessary tag.-->                        <picture>
+                    This helps keep everything the same but it also is an unecessary tag.-->
+                    <picture>
                         <img class="img-responsive feature-img" src="images/circadian.svg" alt="Sleeping Emoji"/>
                     </picture>
                     <h3>Circadian</h3>
@@ -54,6 +65,7 @@
                         <a href="https://github.com/erwang01/circadian" target="_blank">https://github.com/erwang01/circadian</a>
                     </p>
                 </article>
+                
                 <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                     <!--TODO: How do you make this image + text line up with
                     the other two images when the src image is of a different
@@ -71,25 +83,25 @@
                     </p>
                 </article>
             </main>
+
             <div class="row">
                 <div class="col-xs-12">
                     <hr>
                 </div>
             </div>
-            <footer>
-                <div id="social" class="row">
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="https://www.facebook.com/erwang01" class="zocial-facebook">Facebook</a>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="https://plus.google.com/u/0/113329551984054308900" class="zocial-googleplus">Google+</a>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="https://www.linkedin.com/in/erwang01/" class="zocial-linkedin">LinkedIn</a>
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <a href="https://github.com/erwang01/portfolio-site" title="View source for this page on GitHub" class="zocial-github" id="viewSource">View source on GitHub</a>
-                    </div>
+
+            <footer id="social" class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <a href="https://www.facebook.com/erwang01" class="zocial-facebook">Facebook</a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="https://plus.google.com/u/0/113329551984054308900" class="zocial-googleplus">Google+</a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="https://www.linkedin.com/in/erwang01/" class="zocial-linkedin">LinkedIn</a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="https://github.com/erwang01/portfolio-site" title="View source for this page on GitHub" class="zocial-github" id="viewSource">View source on GitHub</a>
                 </div>
                 <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
                 <!--TODO: How do you get the zocial fonts to load after all the images and text?-->
