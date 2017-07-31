@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <!--TODO: some sites have much more meta tags, how do you know which ones to add? -->
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eric Wang - Portfolio</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     </head>
     <body>
@@ -13,75 +14,84 @@
             <header class="header row">
                 <div class="float-left col-xs-5">
                     <!--TODO: For some reason the svg was much larger than the png-->
-                    <img class="img-responsive logo" src="images/logo.png" alt="logo" />
+                    <img class="img-responsive logo" src="images/logo.png" alt="logo">
                 </div>
                 <div class="col-xs-7 text-right">
                     <h1>Eric Wang</h1>
                     <h4>Front-End Ninja</h4>
                 </div>
             </header>
-            <hr />
+            <hr class="row col-xs-12">
             <div class="row">
                 <picture class="col-xs-12">
-                    <source size="(max-width:350px)" srcset="images/WhiteTiger_small_400.jpg 400w, images/WhiteTiger_medium_800.jpg 800w"  />
-                    <source size="(max-width:750px)" srcset="images/WhiteTiger_medium_800.jpg 800w"/>
-                    <img src="img-responsive images/WhiteTiger.jpg" alt="White Tiger with Blue Eyes"/>
+                    <source sizes="100vw" srcset="images/WhiteTiger_small_400.jpg 400w, images/WhiteTiger_medium_800.jpg 800w">
+                    <img class="img-responsive" src="images/WhiteTiger.jpg" alt="White Tiger with Blue Eyes">
                 </picture>
             </div>
-            <section class="row">
+            <main class="row">
                 <header class="col-xs-12">
                     <h2>Featured Work</h2>
                 </header>
-                <div class="row">
-                    <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
-                        <picture>
-                            <source srcset="images/Glock-19.jpg 500w, images/Glock-19_small_300.jpg 300w"/>
-                            <img class="img-responsive feature_img" src="images/Glock-19.jpg" alt="Glock 19 handgun"/>
-                        </picture>
-                        <h3>Homeboy</h3>
-                        <p>
-                            A third person shooter.
-                            <a href="https://github.com/erwang01/homeboy">https://github.com/erwang01/homeboy</a>
-                        </p>
-                    </article>
-                    <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
-                        <!--TODO: Should I still be using picture because there is only one image file?
-                        This helps keep everything the same but it also is an unecessary tag.-->                        <picture>
-                            <img class="img-responsive feature_img" src="images/circadian.svg" alt="Sleeping Emoji"/>
-                        </picture>
-                        <h3>Circadian</h3>
-                        <p>
-                            A sleep tracking app.
-                            <a href="https://github.com/erwang01/circadian">https://github.com/erwang01/circadian</a>
-                        </p>
-                    </article>
-                    <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
-                        <!--TODO: How do you make this image + text line up with
-                        the other two images when the src image is of a different
-                        ratio. I had to crop it with external software, is there
-                        a better way? I think the way I organized each set of
-                        picture and text into an article prevents me from aligning
-                        the pictures and making it responsive at the same time.-->
-                        <picture>
-                            <source media="(min-width: 600px)" srcset="images/jinx.jpg 1500w, images/jinx_small.jpg 725w"/>
-                            <img class="img-responsive feautre_img" src="images/jinx_small.jpg" alt="Cat laying down" />
-                        </picture>
-                        <h3>Jinx</h3>
-                        <p>
-                            My favorite cat named Jinx.
-                        </p>
-                    </article>
+                <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                    <picture>
+                        <source sizes="(min-width: 600px) 50vw, 33vw" srcset="images/Glock-19.jpg 500w, images/Glock-19_small_300.jpg 300w"/>
+                        <img class="img-responsive feature-img" src="images/Glock-19.jpg" alt="Glock 19 handgun"/>
+                    </picture>
+                    <h3>Homeboy</h3>
+                    <p>
+                        A third person shooter.
+                        <a href="https://github.com/erwang01/homeboy" target="_blank">https://github.com/erwang01/homeboy</a>
+                    </p>
+                </article>
+                <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                    <!--TODO: Should I still be using picture because there is only one image file?
+                    This helps keep everything the same but it also is an unecessary tag.-->                        <picture>
+                        <img class="img-responsive feature-img" src="images/circadian.svg" alt="Sleeping Emoji"/>
+                    </picture>
+                    <h3>Circadian</h3>
+                    <p>
+                        A sleep tracking app.
+                        <a href="https://github.com/erwang01/circadian" target="_blank">https://github.com/erwang01/circadian</a>
+                    </p>
+                </article>
+                <article class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                    <!--TODO: How do you make this image + text line up with
+                    the other two images when the src image is of a different
+                    ratio. I had to crop it with external software, is there
+                    a better way? I think the way I organized each set of
+                    picture and text into an article prevents me from aligning
+                    the pictures and making it responsive at the same time.-->
+                    <picture>
+                        <source media="(min-width: 600px)" sizes="(min-width: 600px) 50vw, 33vw" srcset="images/jinx.jpg 1500w, images/jinx_small.jpg 725w">
+                        <img class="img-responsive feautre_img" src="images/jinx_small.jpg" alt="Cat laying down">
+                    </picture>
+                    <h3>Jinx</h3>
+                    <p>
+                        My favorite cat named Jinx.
+                    </p>
+                </article>
+            </main>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr>
                 </div>
-            </section>
-            <hr />
-            <footer >
+            </div>
+            <footer>
                 <div id="social" class="row">
-                    <a href="https://www.facebook.com/erwang01" class="zocial-facebook col-xs-6 col-sm-3">Facebook</a>
-                    <a href="https://plus.google.com/u/0/113329551984054308900" class="zocial-googleplus col-xs-6 col-sm-3">Google+</a>
-                    <a href="https://www.linkedin.com/in/erwang01/" class="zocial-linkedin col-xs-6 col-sm-3">LinkedIn</a>
-                    <a href="https://github.com/erwang01/portfolio-site" title="View source for this page on GitHub" class="zocial-github col-xs-6 col-sm-3" id="viewSource">View source on GitHub</a>
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="https://www.facebook.com/erwang01" class="zocial-facebook">Facebook</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="https://plus.google.com/u/0/113329551984054308900" class="zocial-googleplus">Google+</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="https://www.linkedin.com/in/erwang01/" class="zocial-linkedin">LinkedIn</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <a href="https://github.com/erwang01/portfolio-site" title="View source for this page on GitHub" class="zocial-github" id="viewSource">View source on GitHub</a>
+                    </div>
                 </div>
-                <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+                <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
                 <!--TODO: How do you get the zocial fonts to load after all the images and text?-->
             </footer>
 
